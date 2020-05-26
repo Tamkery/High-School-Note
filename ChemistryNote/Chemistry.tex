@@ -3,6 +3,7 @@
 \usepackage[UTF8]{ctex}
 \usepackage{chemfig}
 \usepackage{ulem}%删除线
+\usepackage{amsmath} %分段函数
 
 \title{寻松点点的高中化学笔记}
 \author{Tamkery }
@@ -95,16 +96,19 @@
 注：H：一个共价键 \ N：三个共价键 \ O:两个共价键
 \newline \par
 \subsection{二、有机物的同分异构体现象—有机物种类繁多的原因}
-同分异构类型：\\
-1. 碳键异构：碳键骨架不同\\
-2. 位置异构：官能团位置不同\\
-3. 官能团异构：分子式相同，但官能团不同\\
+%\begin{equation}
+$$\text{同分异构类型：}
+	\begin{cases}  \text{1. 碳键异构：碳键骨架不同} \\
+						\text{2. 位置异构：官能团位置不同} \\
+ 						\text{3. 官能团异构：分子式相同，但官能团不同}
+	\end{cases}$$
+%\end{equation}
 \newline  \par
 碳键异构：\chemfig{C_4H_{10}}\\
 \chemfig{CH_3-CH_2-CH_2-CH_3 } \quad \chemfig{CH_3-CH(-[2]CH_3)-CH_3 } 
 \\
 \newline \par
-官能团异构：\chemfig{C_2H_6O}\\
+官能团异构：\chemfig{C_2H_6O}\par
 \chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-OH } \quad   \chemfig{CH_3-O-CH_3}\\
 \newline \par
 位置异构:\chemfig{C_4H_8} \\
@@ -116,7 +120,42 @@
 3. 同数碳原子的氨基酸和硝基烷互为同分异构体\\
 
 
+\section{第三节\ 有机物的命名}
 
+\subsection{一、烷烃命名}
+烷基：\chemfig{C_nH_{2n+1}} \\
+\newline 
+甲基：\chemfig{-CH_3} \\
+乙基：\chemfig{-CH_2-CH_3} \\
+丙基: \chemfig{-CH_2-CH_2-CH_3} \\
+异丙基： \chemfig{CH_3-CH(-[6])-CH_3 }
+
+
+\subsection{二、命名步骤}
+烷烃类有机物的命名步骤和原则：\\
+1. 选主链，称“某烷” ——“最长原则”  \\
+2. 编号位，定支链 ——“最近原则” \\
+3. 取代基写在前，标位置，连短线 \\
+4. 相同基合并写 ——“最小取代基位号之和最小” \\
+5. 不同基简到繁 ——“最简：当主链有两个以上时，选择取代基最简单的”
+
+\subsection{三、烯烃、炔烃命名}
+\newpage
+\subsection{四、苯的同系物命名}
+苯环分子中的H被烷基取代 \\
+\newline 
+命名：以苯环为母体 \\
+1. 有两个烷基：“邻(居)；间(隔)；对(称)” \\
+2. 有三个烷基：“连偏均 ” \\
+
+
+
+\chemname{\chemfig{*6(-(-[6]CH_3) =(-[7]CH_3) -(-[1]CH_3) =- = ) } }
+{连三甲苯}  \quad
+\chemname{\chemfig{*6(-(-[6]CH_3) = -(-[1]CH_3) =(-[2]CH_3) - = )} }
+{偏三甲苯 } \ 
+\chemname{\chemfig{*6((-[5]CH_3)- =(-[7]CH_3) - =(-[2]CH_3) - =  )} }
+{均三甲苯} 
 
 
 
