@@ -4,6 +4,13 @@
 \usepackage{chemfig}
 \usepackage{ulem}%删除线
 \usepackage{amsmath} %分段函数
+\usepackage{amsmath} %\text{ } math
+%化学
+\usepackage{tikz}
+\usepackage{chemfig}
+\usepackage[version=3,arrows=pgf]{mhchem}
+\usepackage{verbatim} % 化学
+
 
 \title{寻松点点的高中化学笔记}
 \author{Tamkery }
@@ -13,6 +20,65 @@
 \tableofcontents
 %\begin{abstract}
 %\end{abstract}
+
+
+
+\newcommand\ncoord[2][0,0]{%
+    \tikz[remember picture,overlay]{\path (#1) coordinate (#2);}%
+}
+
+\newcommand\ccoord[1]{\ncoord[0.5em,0.9em]{#1}}%
+\newcommand\bcoord[1]{\ncoord[0.4em,-0.3em]{#1}}%
+\newcommand\dcoord[1]{\ncoord[0.9em,1.5em]{#1}}%
+\newcommand\ecoord[1]{\ncoord[0.9em,-0.3em]{#1}}%
+
+\tikzset{
+    oxidation/.style={thick,red!80!black},
+    reduction/.style={thick,blue!80!black},
+}
+
+
+
+~
+
+
+
+\part{必修一}
+
+\chapter{第一章\ 从实验学化学}
+
+
+\section{第一节\  化学实验基本方法}
+
+\section{第二节\  化学计量}	
+
+
+\chapter{第二章\ 化学物质及其变化}
+
+\section{第一节\  物质的分类}
+
+\section{第二节\  离子反应}
+
+\section{第三节\  氧化还原反应}
+
+\subsection{四、氧化还原反应中电子转移的表示方法}
+方法一、双线桥法： \\
+\[
+\ce{{\ccoord{1}} Na + {\bcoord{c}} Cl -> {\ccoord{2}} Na+  + {\bcoord{d}} Cl-}
+\]
+
+\tikz[overlay,remember picture] {
+    \draw[oxidation,->] (1) -- ++(0,0.7em) -| (2)
+        node[above, near start] {氧化反应};
+    \draw[reduction,->] (c) -- ++(0,-0.7em) -| (d)
+        node[below, near start] {还原反应};
+}
+\\[0.5cm] 
+
+
+
+
+
 
 
 \part{选修五\ 有机化学基础}
