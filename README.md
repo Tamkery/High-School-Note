@@ -1,6 +1,8 @@
 # High-School-Note
 My high school Note written by LaTeX
 
+（因为是闲暇时候码字，现在也不是化学专业相关，所以每次更新内容不会太多）
+
 ## 无机化学
 氧化还原反应
 
