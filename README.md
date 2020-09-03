@@ -1,6 +1,9 @@
 # High-School-Note
 My high school Note written by LaTeX
 
+## 怒江边高中教师生活中，更新需等到寒假（或许之后） 
+
+
 （因为是闲暇时候码字，现在也不是化学专业相关，所以每次更新内容不会太多）
 
 ## 无机化学
