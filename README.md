@@ -15,4 +15,5 @@ My high school Note written by LaTeX
 
 ## 离子反应
 
-
+## 2021-02-11
+搭建LaTeX环境，打算在寒假更新一下（至于多少，看心情）
